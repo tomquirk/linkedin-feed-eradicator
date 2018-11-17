@@ -2,6 +2,7 @@
 .feed-right-rail.right-rail,
 .sort-dropdown.ember-view,
 .feed-identity-module__anchored-widget--premium-upsell,
-.nav-item__spotlight {
+.nav-item__spotlight,
+.sticky.ember-view {
   display: none !important;
 }

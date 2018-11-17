@@ -4,18 +4,29 @@
   "description": "Hide your Linkedin feed so you can actually get sh*t done, instead of seeing \"motivational\" posts about getting sh*t done",
   "manifest_version": 2,
   "permissions": [
-    "storage",
-    "http://www.linkedin.com/*",
-    "https://www.linkedin.com/*"
+    "http://www.linkedin.com/feed",
+    "https://www.linkedin.com/feed",
+    "http://www.linkedin.com/feed/",
+    "https://www.linkedin.com/feed/"
   ],
   "content_scripts": [
     {
-      "matches": ["http://www.linkedin.com/*", "https://www.linkedin.com/*"],
+      "matches": [
+        "http://www.linkedin.com/feed",
+        "https://www.linkedin.com/feed",
+        "http://www.linkedin.com/feed/",
+        "https://www.linkedin.com/feed/"
+      ],
       "css": ["eradicate.css"],
       "run_at": "document_start"
     },
     {
-      "matches": ["http://www.linkedin.com/*", "https://www.linkedin.com/*"],
+      "matches": [
+        "http://www.linkedin.com/feed",
+        "https://www.linkedin.com/feed",
+        "http://www.linkedin.com/feed/",
+        "https://www.linkedin.com/feed/"
+      ],
       "css": ["eradicate.css"],
       "run_at": "document_idle"
     }
