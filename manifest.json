@@ -1,0 +1,23 @@
+{
+  "name": "Feed Eradicator for Linkedin",
+  "version": "1.0.0",
+  "description": "Hide your Linkedin feed so you can actually get sh*t done, instead of seeing \"motivational\" posts about getting sh*t done",
+  "manifest_version": 2,
+  "permissions": [
+    "storage",
+    "http://www.linkedin.com/*",
+    "https://www.linkedin.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://www.linkedin.com/*", "https://www.linkedin.com/*"],
+      "css": ["eradicate.css"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["http://www.linkedin.com/*", "https://www.linkedin.com/*"],
+      "css": ["eradicate.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+.relative.ember-view,
+.feed-right-rail.right-rail,
+.sort-dropdown.ember-view,
+.feed-identity-module__anchored-widget--premium-upsell,
+.nav-item__spotlight {
+  display: none !important;
+}
